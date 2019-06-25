@@ -1,7 +1,4 @@
-﻿html {
-}
-
-body {
+﻿body {
     margin: 0;
     background-image: url("Images/background-img-2.jpg");
     background-size: contain;
@@ -9,7 +6,7 @@ body {
     left: 0;
 }
 
-p, li {
+p {
     font-family: 'Calisto MT';
     font-size: 20px;
 }
@@ -17,57 +14,6 @@ p, li {
 main {
     margin-bottom: 50px;
 }
-
-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 75px;
-    border-bottom: thick solid rgb(67,92,192); /* blue */
-    background-color: #cbcdcd; /* light grey */
-    z-index: 8;
-}
-
-    header .center {
-        position: relative;
-        height: 100px;
-        top: 0;
-        left: 0
-    }
-
-    header a.logo {
-        position: relative;
-        display: block;
-        float: left;
-        width: 222px;
-        height: 60px;
-        margin: 0 35px 0 0;
-    }
-
-        header a.logo .logo_img {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 75px;
-            width: 75px;
-        }
-
-        header a.logo .text1 {
-            position: absolute;
-            left: 150px;
-            top: 0;
-            color: black;
-            font-family: 'Calisto MT';
-        }
-
-        header a.logo .text2 {
-            position: absolute;
-            left: 150px;
-            top: 20px;
-            color: black;
-            font-family: 'Calisto MT';
-        }
 
 section.project-covers {
     position: relative;
@@ -389,44 +335,6 @@ footer {
     background-color: #cbcdcd; /* light grey */
     border-top: thick solid rgb(67,92,192); /* blue */
 }
-
-nav #menu {
-    float: right;
-    height: 90px;
-}
-
-#menu > ul {
-    height: 50px;
-}
-
-    #menu > ul > li {
-        float: left;
-        margin: 0 50px 0 0;
-        font-family: 'Calisto MT';
-    }
-
-        #menu > ul > li > a {
-            height: 14px;
-            padding: 20px 10px;
-            text-transform: uppercase;
-        }
-
-ul.list {
-    position: fixed;
-    top: 1%;
-    left: 60%;
-    width: 45%;
-    font-family: 'Calisto MT';
-}
-
-    ul.list > li a {
-        position: relative;
-        display: block;
-        color: #2a2a2a;
-        font: normal 14px 'HNBD';
-        line-height: 14px;
-        z-index: 0;
-    }
 
 div.social_media {
     position: relative;

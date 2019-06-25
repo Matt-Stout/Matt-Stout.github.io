@@ -1,9 +1,14 @@
-﻿<!DOCTYPE html>
-<html>
-<head lang="en">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="Contact" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
     <title>Contact Matt</title>
     <link rel="shortcut icon" href="Images/M_Logo.png" />
 
+    <!-- Custom stylesheet for the header of each page-->
+    <link rel="stylesheet" href="Header.css" />
     <!-- Custom stylesheet just for this page -->
     <link rel="stylesheet" href="Contact.css" />
     <!-- Latest compiled and minified CSS -->
@@ -17,72 +22,73 @@
     <meta name="keywords" content="Matt Stout, Contact Page, LinkedIn, Github, Facebook, Instagram, Portfolio, Web Development, Software Development, Animation, Front End, HTML, CSS, JavaScript, C#, Java" />
     <meta name="description" content="Contact information to get in touch with Matt Stout, including email, phone, and social media." />
     <meta name="author" content="Matt Stout" />
+    <meta http-equiv="refresh" content="30" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
 <body>
-    <header>
-        <div class="center">
-            <a href="index.html" class="logo">
-                <img src="Images/M_Logo.png" alt="M_Logo" class="logo_img" />
+    <form id="form1" runat="server">
+        <header>
+            <a class="logo" href="HomePage.html">
+                <img class="logo_img" src="Images/M_Logo.png" alt="M_Logo"/>
             </a>
             <nav id="menu">
                 <ul class="list">
-                    <li style="list-style-type: none">
-                        <a href="Portfolio.html" style="text-decoration: none">Portfolio</a>
+                    <li class="page" style="list-style-type: none">
+                        <a class="page_link" href="Portfolio.html" style="text-decoration: none">Portfolio</a>
                     </li>
-                    <li style="list-style-type: none">
-                        <a href="About.html" style="text-decoration: none">About</a>
+                    <li class="page" style="list-style-type: none">
+                        <a class="page_link" href="About.html" style="text-decoration: none">About</a>
                     </li>
-                    <li style="list-style-type: none">
-                        <a href="Contact.html" style="text-decoration: none">Contact</a>
+                    <li class="page" style="list-style-type: none">
+                        <a class="page_link active" href="Contact.html" style="text-decoration: none">Contact</a>
                     </li>
                 </ul>
             </nav>
+        </header>
+        <div>
+            <section class="contact">
+                <div class="info-group">
+                    <div class="heading row">
+                        <h1>Contact Me</h1>
+                    </div>
+                    <div class="info row">
+                        <p>Email :<span class="right" style="margin-left: 20%;">matt.stout10@gmail.com</span></p>
+
+                    </div>
+                    <div class="info row">
+                        <p>Phone :<span class="right" style="margin-left: 19.5%;">(920) 988 - 4547</span></p>
+                    </div>
+                    <div class="info row">
+                        <p>
+                            Social Media :
+                            <span class="right" style="margin-left: 15%;">
+                                <a href="https://www.linkedin.com/in/matt-stout-8421a0105/">LinkedIn</a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="info row">
+                        <p><span class="right"><a href="https://github.com/Matt-Stout">Github</a></span></p>
+                    </div>
+                    <div class="info row">
+                        <p><span class="right"><a href="https://www.facebook.com/mattyice30">Facebook</a></span></p>
+                    </div>
+                    <div class="info row">
+                        <p><span class="right"><a href="https://www.instagram.com/mattyicestout/">Instagram</a></span></p>
+                    </div>
+                </div>
+                <div class="headshot row">
+                    <img src="Images/HeadShot.JPG" alt="Headshot" />
+                </div>
+
+            </section>
+
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
-    </header>
-    <div>
-        <section class="contact">
-            <div class="info-group">
-                <div class="heading row">
-                    <h1>Contact Me</h1>
-                </div>
-                <div class="info row">
-                    <p>Email :<span class="right" style="margin-left: 20%;">matt.stout10@gmail.com</span></p>
-
-                </div>
-                <div class="info row">
-                    <p>Phone :<span class="right" style="margin-left: 19.5%;">(920) 988 - 4547</span></p>
-                </div>
-                <div class="info row">
-                    <p>
-                        Social Media :
-                        <span class="right" style="margin-left: 15%;">
-                            <a href="https://www.linkedin.com/in/matt-stout-8421a0105/">LinkedIn</a>
-                        </span>
-                    </p>
-                </div>
-                <div class="info row">
-                    <p><span class="right"><a href="https://github.com/Matt-Stout">Github</a></span></p>
-                </div>
-                <div class="info row">
-                    <p><span class="right"><a href="https://www.facebook.com/mattyice30">Facebook</a></span></p>
-                </div>
-                <div class="info row">
-                    <p><span class="right"><a href="https://www.instagram.com/mattyicestout/">Instagram</a></span></p>
-                </div>
-            </div>
-            <div class="headshot row">
-                <img src="Images/HeadShot.JPG" alt="Headshot" />
-            </div>
-
-        </section>
-
-        <br />
-        <br />
-        <br />
-        <br />
-    </div>
+    </form>
     <footer>
         <div class="social_media">
             <a href="https://www.linkedin.com/in/matt-stout-8421a0105/" target="_blank" style="text-decoration: none">
